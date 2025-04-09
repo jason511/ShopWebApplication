@@ -1,0 +1,23 @@
+<h2>後台登入</h2>
+
+<div class="container">
+    <form asp-action="Index" method="post">
+        <div class="form-group">
+            <label for="Username">管理者暱稱或電子郵件</label>
+            <input type="text" class="form-control" id="Username" name="Username" required />
+        </div>
+
+        <div class="form-group">
+            <label for="Password">密碼</label>
+            <input type="password" class="form-control" id="Password" name="Password" required />
+        </div>
+
+        <!-- 可選的「記住我」勾選框 -->
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="RememberMe" name="RememberMe" />
+            <label class="form-check-label" for="RememberMe">記住我</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">登入</button>
+    </form>
+</div>
